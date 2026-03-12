@@ -14,4 +14,11 @@ public:
     }
 };
 
+class RandomInputGenerator : public IInputGenerator {
+public:
+    int GenerateInput() override {
+        return rand() % 5 + 1;
+    }
+};
+
 #endif
